@@ -7,8 +7,10 @@ const Footer: React.FC<FooterProps> = ({ ...props }) => {
 		<footer
 			data-reveal
 			className='bg-white
-text-orange-500 section-container py-4 flex justify-between items-center'>
-			<span>&copy; {new Date().getFullYear()} Прораб Максим МСК</span>
+text-orange-500  flex justify-between items-center'>
+			<div className='section-container py-4'>
+				<span>&copy; {new Date().getFullYear()} Прораб Максим МСК</span>
+			</div>
 		</footer>
 	)
 }

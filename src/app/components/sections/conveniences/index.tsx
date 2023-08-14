@@ -15,7 +15,7 @@ const ConveniencesSection: React.FC<ConveniencesSectionProps> = ({
 					className='capitalise text-4xl  md:text-6xl leading-tight'>
 					УДОБСТВО ОПЛАТЫ И ГАРАНТИИ КАЧЕСТВА
 				</h2>
-				<ul className='mt-24 flex flex-col gap-8 md:gap-12 lg:gap-16'>
+				<ul className='mt-24 grid gap-8 md:gap-12 lg:gap-16 lg:grid-cols-2'>
 					<Item
 						title='Работа без авансов'
 						text='Мы используем понятный и прозрачный формат поэтапной оплаты ремонта. Это удобно для заказчиков.'

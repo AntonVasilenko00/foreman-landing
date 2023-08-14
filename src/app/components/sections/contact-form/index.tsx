@@ -8,10 +8,10 @@ const ContactFormSection: React.FC<ContactFormSectionProps> = ({
 	...props
 }) => {
 	return (
-		<Section id='contact-form' className='bg-white min-h-0 py-24'>
+		<Section id='contact-form' className='bg-white min-h-0 py-20'>
 			<div className='section-container  flex flex-col items-center'>
 				<div className='md:w-3/4 lg:w-1/2'>
-					<h1 className='text-xl font-bold text-orange-500 my-4'>
+					<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500 mb-8 md:mb-16 lg:mb-24'>
 						Напишите сейчас и получите{' '}
 						<span className='border-b-2 border-b-red-500 animate-pulse'>
 							бесплатную смету

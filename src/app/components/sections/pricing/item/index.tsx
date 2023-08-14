@@ -22,7 +22,10 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 	const [modalOpen, setModalOpen] = useState(false)
 	return (
 		<li className='my-12 w-full'>
-			<hr data-reveal className='border-orange-500 border-b-2 my-24' />
+			<hr
+				data-reveal
+				className='border-orange-500 border-b-2 my-24 lg:hidden'
+			/>
 			<h3 data-reveal className='text-3xl md:text-4xl my-4'>
 				{name}
 			</h3>
@@ -47,7 +50,7 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 				<DialogTrigger className='mt-8 ml-6'>
 					<a
 						data-reveal
-						className='block uppercase text-orange-500 drop-shadow animate-pulse animate-bounce hover:scale-110 hover:animate-none duration-300 md:text-xl'>
+						className='block uppercase text-orange-500 drop-shadow animate-pulse animate-bounce hover:scale-110 hover:animate-none duration-700 md:text-xl'>
 						Оставить заявку
 					</a>
 				</DialogTrigger>

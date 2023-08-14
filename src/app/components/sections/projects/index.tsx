@@ -18,7 +18,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
 				<h2 data-reveal className='px-8 text-4xl font-semibold'>
 					Наши работы
 				</h2>
-				<ul className='mt-10 lg:mt-20'>
+				<ul className='mt-10 grid grid-cols-1 gap-10 md:gap-16 lg:gap-20 lg:grid-cols-2'>
 					<ProjectList projects={projects || []} />
 				</ul>
 			</div>

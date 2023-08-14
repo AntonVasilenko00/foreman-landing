@@ -23,20 +23,13 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ ...props }) => {
 					/>
 					<ExpContent
 						title='Команда'
-						num='50+'
-						text='Профессионалов
-          своего дела'
+						num='25+'
+						text='Профессионалов в сфере ремонта и дизайна'
 					/>
+					<ExpContent title='Более' num='100' text='Довольных заказчиков' />
 					<ExpContent
 						title='Более'
-						num='241'
-						text='Успешно завершенных
-          объектов'
-					/>
-
-					<ExpContent
-						title='Более'
-						num='25 475'
+						num='25 000'
 						text='Квадратных метров
           отремонтированного жилья'
 					/>

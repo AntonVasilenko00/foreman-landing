@@ -36,7 +36,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
 	const onSubmit = async (data: FormData) => {
 		try {
-			const response = { status: 200 } //await axios.post('https://formspree.io/f/mnqkpodd', data)
+			const response = await axios.post('https://formspree.io/f/mnqkpodd', data)
 			if (response.status === 200) {
 				toast('Форма успешно отправлена! Скоро с вами свяжемся.', {
 					type: 'success',
@@ -63,8 +63,8 @@ const ContactForm: React.FC<ContactFormProps> = ({
 	return (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className='flex flex-col gap-4 w-full'>
-			<label>
+			className='flex flex-col gap-4 md:gap-6 lg:gap-8 w-full'>
+			<label className='flex flex-col gap-2'>
 				Ваш номер телефона:
 				<PhoneInputWithCountry
 					value={getValues('phone')}
@@ -85,7 +85,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				/>
 				{errors.phone && <p className='text-red-500'>{errors.phone.message}</p>}
 			</label>
-			<label className='flex flex-col'>
+			<label className='flex flex-col gap-2'>
 				Ваш email (опционально):
 				<input
 					{...register('email', {
@@ -99,17 +99,17 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				/>
 				{errors.email && <p className='text-red-500'>{errors.email.message}</p>}
 			</label>
-			<label className='flex flex-col'>
+			<label className='flex flex-col gap-2'>
 				Ваше сообщение:
 				<textarea
 					{...register('message', { required: true })}
 					placeholder='Сколько будет стоить косметический ремонт в двушке 45 квадратов?'
-					className='border p-2 rounded'
+					className='border md:min-h-[12rem] p-2 rounded placeholder:text-xs sm:placeholder:text-md md:placeholder:text-lg'
 				/>
 			</label>
 			<button
 				type='submit'
-				className='bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 animate-pulse hover:animate-none focus:animate-none'>
+				className='focus:outline-4 bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 animate-pulse hover:animate-none focus:animate-none'>
 				Отправить
 			</button>
 		</form>

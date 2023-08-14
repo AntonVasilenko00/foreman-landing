@@ -19,7 +19,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ ...props }) => {
 					Оставьте заявку, мы перезвоним и ответим на все Ваши вопросы.
 				</p>
 
-				<ul className='flex flex-col lg:items-center'>
+				<ul className='flex flex-col lg:flex-row lg:gap-6 lg:py-16'>
 					<PriceItem
 						name='ЭКОНОМ'
 						price='от 25 т.р./м2'

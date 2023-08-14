@@ -1,4 +1,4 @@
-import { cn } from '@/shared/utils/index.ts'
+import { cn } from '@/shared/utils/'
 import { PropsWithChildren, HTMLProps } from 'react'
 
 interface SectionProps extends PropsWithChildren, HTMLProps<HTMLDivElement> {

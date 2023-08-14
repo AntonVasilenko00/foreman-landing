@@ -1,4 +1,4 @@
-import { cn } from '@/shared/utils/index.ts'
+import { cn } from '@/shared/utils'
 import { HTMLProps, SVGProps } from 'react'
 
 export const CheckIcon: React.FC<SVGProps<SVGElement>> = ({ ...props }) => {

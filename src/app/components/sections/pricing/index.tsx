@@ -7,7 +7,7 @@ interface PricingSectionProps extends HTMLProps<HTMLDivElement> {}
 const PricingSection: React.FC<PricingSectionProps> = ({ ...props }) => {
 	return (
 		<Section id='pricing' useWhiteBackgroundImage>
-			<div className='section-container flex flex-col lg:items-center'>
+			<div className='section-container flex flex-col'>
 				<h2 data-reveal className='uppercase text-3xl sm:text-5xl py-12'>
 					СТОИМОСТЬ РЕМОНТА
 				</h2>
@@ -78,7 +78,7 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 	...props
 }) => {
 	return (
-		<li className='my-12'>
+		<li className='my-12 w-full'>
 			<hr data-reveal className='border-orange-500 border-b-2 my-24' />
 			<h3 data-reveal className='text-3xl md:text-4xl my-4'>
 				{name}
@@ -103,7 +103,7 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 			<a
 				data-reveal
 				href='#contacts'
-				className='block mt-8 ml-6 uppercase text-orange-500 drop-shadow animate-pulse animate-bounce md:text-xl'>
+				className='block mt-8 ml-6 uppercase text-orange-500 drop-shadow animate-pulse animate-bounce hover:scale-110 hover:animate-none duration-300 md:text-xl'>
 				Оставить заявку
 			</a>
 		</li>

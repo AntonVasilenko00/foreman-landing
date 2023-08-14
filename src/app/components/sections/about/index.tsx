@@ -33,7 +33,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 						<p
 							data-reveal
 							className='text-2xl drop-shadow-md italic text-center font-medium text-slate-800'>
-							&quot;Я делаю не ремонт, я делаю
+							&quot;Я делаю не ремонт, я делаю{' '}
 							<span className='border-b-orange-500 border-b-2'>
 								людей счастливыми
 							</span>{' '}

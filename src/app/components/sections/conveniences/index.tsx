@@ -9,13 +9,13 @@ const ConveniencesSection: React.FC<ConveniencesSectionProps> = ({
 }) => {
 	return (
 		<Section id='conveniences' useWhiteBackgroundImage>
-			<div className='section-container'>
+			<div className='container mx-auto px-10 mt-24 lg:mt-36'>
 				<h2
 					data-reveal
 					className='capitalise text-4xl  md:text-6xl leading-tight'>
 					УДОБСТВО ОПЛАТЫ И ГАРАНТИИ КАЧЕСТВА
 				</h2>
-				<ul className='mt-24 flex flex-col gap-8 md:gap-12 lg:gap-16 pr-2'>
+				<ul className='mt-24 flex flex-col gap-8 md:gap-12 lg:gap-16'>
 					<Item
 						title='Работа без авансов'
 						text='Мы используем понятный и прозрачный формат поэтапной оплаты ремонта. Это удобно для заказчиков.'
@@ -63,9 +63,9 @@ const Item: React.FC<ItemProps> = ({ title, text }) => (
 	<li className='flex gap-4 md:gap-6'>
 		<CheckIcon
 			data-reveal
-			className='min-h-fit min-w-fit w-8 h-8 lg:w-12 lg:h-12 fill-orange-500'
+			className='min-w-[2rem] min-h-[2rem] lg:min-w-[3rem] lg w-8 h-8 lg:w-12 lg:h-12 fill-orange-500'
 		/>
-		<div data-reveal className='flex flex-col gap-3'>
+		<div data-reveal className='flex-grow flex flex-col gap-3'>
 			<p data-reveal className='font-semibold text-lg md:text-3xl'>
 				{title}
 			</p>

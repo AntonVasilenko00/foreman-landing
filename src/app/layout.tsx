@@ -1,7 +1,9 @@
-import Header from '@/shared/components/layout/header'
 import '../shared/styles/globals.css'
+import 'react-toastify/dist/ReactToastify.css'
+import Header from '@/shared/components/layout/header'
 import { Open_Sans } from 'next/font/google'
 import Footer from '@/shared/components/layout/footer'
+import { ToastContainer } from 'react-toastify'
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -33,6 +35,7 @@ export default function RootLayout({
 					<main className='flex-grow scroll-smooth'>{children}</main>
 					<Footer />
 				</div>
+				<ToastContainer />
 			</body>
 		</html>
 	)

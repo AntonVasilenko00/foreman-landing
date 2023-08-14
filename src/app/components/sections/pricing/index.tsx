@@ -1,6 +1,6 @@
 import Section from '@/shared/components/layout/section'
-import Link from 'next/link'
 import { HTMLProps } from 'react'
+import PriceItem from './item'
 
 interface PricingSectionProps extends HTMLProps<HTMLDivElement> {}
 
@@ -60,53 +60,6 @@ const PricingSection: React.FC<PricingSectionProps> = ({ ...props }) => {
 				</ul>
 			</div>
 		</Section>
-	)
-}
-
-interface PriceItemProps extends HTMLProps<HTMLLIElement> {
-	name: string
-	price: string
-	type: string
-	features: string[]
-}
-
-export const PriceItem: React.FC<PriceItemProps> = ({
-	name,
-	price,
-	features,
-	type,
-	...props
-}) => {
-	return (
-		<li className='my-12 w-full'>
-			<hr data-reveal className='border-orange-500 border-b-2 my-24' />
-			<h3 data-reveal className='text-3xl md:text-4xl my-4'>
-				{name}
-			</h3>
-			<h3
-				data-reveal
-				className='text-3xl md:text-4xl font-bold text-orange-500'>
-				{price}
-			</h3>
-			<h4
-				data-reveal
-				className='text-xl md:text-2xl my-8 border-b-orange-500 border-b-2 w-fit'>
-				{type}
-			</h4>
-			<ul className='list-disc flex flex-col gap-2 marker:text-orange-500 pl-6 font-thin'>
-				{features.map((feature, i) => (
-					<li data-reveal key={i} className='drop-shadow-sm md:text-lg'>
-						{feature}
-					</li>
-				))}
-			</ul>
-			<a
-				data-reveal
-				href='#contacts'
-				className='block mt-8 ml-6 uppercase text-orange-500 drop-shadow animate-pulse animate-bounce hover:scale-110 hover:animate-none duration-300 md:text-xl'>
-				Оставить заявку
-			</a>
-		</li>
 	)
 }
 

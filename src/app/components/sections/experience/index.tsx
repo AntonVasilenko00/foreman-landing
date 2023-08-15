@@ -2,6 +2,7 @@ import Section from '@/shared/components/layout/section'
 import { HTMLProps } from 'react'
 import Image from 'next/image'
 import maxSitting from '@/shared/assets/max-sitting.png'
+import { YEARS_OF_EXPERIENCE } from '@/shared/constants'
 
 interface ExperienceSectionProps extends HTMLProps<HTMLDivElement> {}
 
@@ -17,7 +18,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ ...props }) => {
 				<ul className='z-20 flex flex-col gap-24 my-16 w-3/4 md:w-1/2'>
 					<ExpContent
 						title='Опыт'
-						num='20'
+						num={`${YEARS_OF_EXPERIENCE}`}
 						text='Лет успешной работы
 в сфере строительства и ремонта'
 					/>
@@ -26,10 +27,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ ...props }) => {
 						num='25+'
 						text='Профессионалов в сфере ремонта и дизайна'
 					/>
-					<ExpContent title='Более' num='100' text='Довольных заказчиков' />
+					<ExpContent title='Более' num='177' text='Довольных клиентов' />
 					<ExpContent
 						title='Более'
-						num='25 000'
+						num='10 000'
 						text='Квадратных метров
           отремонтированного жилья'
 					/>

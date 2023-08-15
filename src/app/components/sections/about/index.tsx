@@ -62,7 +62,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 					</p>
 					<p data-reveal className='drop-shadow-md'>
 						<span className='border-b border-b-orange-500'>Наша цель</span> —
-						поддерживать непревзойденные стандарты качества и профессионализма.
+						поддерживать высокие стандарты качества и профессионализма.
 					</p>
 					<p data-reveal className='drop-shadow-md'>
 						Мы специализируемся на выполнении{' '}

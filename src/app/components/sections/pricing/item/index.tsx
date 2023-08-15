@@ -26,7 +26,7 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 				data-reveal
 				className='border-orange-500 border-b-2 my-24 lg:hidden'
 			/>
-			<h3 data-reveal className='text-3xl md:text-4xl my-4'>
+			<h3 data-reveal className='text-3xl md:text-4xl my-4 uppercase'>
 				{name}
 			</h3>
 			<h3

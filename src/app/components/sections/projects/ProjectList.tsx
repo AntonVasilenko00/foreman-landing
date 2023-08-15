@@ -53,7 +53,9 @@ const Project: React.FC<ProjectProps> = ({
 					className='text:xl sm:text-2xl font-bold sm:font-semibold mb-2'>
 					{title}
 				</h3>
-				<p data-reveal className='font-thin mb-4'>
+				<p
+					data-reveal
+					className='font-thin mb-4 min-h-[4rem] flex flex-col justify-center'>
 					{description}
 				</p>
 			</div>

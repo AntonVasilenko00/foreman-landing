@@ -65,13 +65,23 @@ const ContactForm: React.FC<ContactFormProps> = ({
 			onSubmit={handleSubmit(onSubmit)}
 			className='flex flex-col gap-4 md:gap-6 lg:gap-8 w-full'>
 			<label className='flex flex-col gap-2'>
+				Ваше имя:
+				<input
+					{...register('name', {
+						required: 'Пожалуйста, введите Ваше имя',
+					})}
+					className='border p-2 rounded'
+				/>
+				{errors.name && <p className='text-red-500'>{errors.name.message}</p>}
+			</label>
+			<label className='flex flex-col gap-2'>
 				Ваш номер телефона:
 				<PhoneInputWithCountry
 					value={getValues('phone')}
 					name='phone'
 					control={control}
 					rules={{
-						required: 'Пожалуйста, введите ваш номер телефона',
+						required: 'Пожалуйста, введите Ваш номер телефона',
 						minLength: {
 							value: 11,
 							message: 'Номер телефона должен содержать минимум 11 символов',
@@ -103,7 +113,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				Ваше сообщение:
 				<textarea
 					{...register('message', { required: true })}
-					placeholder='Сколько будет стоить косметический ремонт в двушке 45 квадратов?'
 					className='border md:min-h-[12rem] p-2 rounded placeholder:text-xs sm:placeholder:text-md md:placeholder:text-lg'
 				/>
 			</label>

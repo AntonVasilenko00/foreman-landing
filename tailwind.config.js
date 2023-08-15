@@ -5,6 +5,15 @@ const whiteBricksUrl =
 const heroUrl =
 	'https://images.ctfassets.net/exhgc4ofdrwe/2Sg3l03KLeww7XJ70nCCXJ/672cffa94e088322439d47bd7c270d12/hero-bg.png'
 
+const heroUrl2 =
+	'https://images.ctfassets.net/exhgc4ofdrwe/5dhJypAmvRr2Xq1ZGE0YXU/c5c4a75c7fe00a43515fc818315f5797/hero-bg-2.png'
+
+const heroUrl3 =
+	'https://images.ctfassets.net/exhgc4ofdrwe/d2ZAEtCOqTlN4lKrhAUUC/9fdc963572c9b4488c705d5fb4acba39/hero-bg-3.png'
+
+const heroUrl4 =
+	'https://images.ctfassets.net/exhgc4ofdrwe/mDstrQqbP3xoxOLTDYbJf/ee3a368b7ff979b6a87845a03b53a469/hero-bg-4.png	'
+
 module.exports = {
 	darkMode: ['class'],
 	content: [

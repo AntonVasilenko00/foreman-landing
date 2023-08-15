@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-const url1 =
-	'https://phonoteka.org/uploads/posts/2022-01/thumbs/1642747786_15-phonoteka-org-p-belii-fon-dlya-saita-15.jpg'
-const url2 =
+const whiteBricksUrl =
 	'https://phonoteka.org/uploads/posts/2022-01/thumbs/1642747821_21-phonoteka-org-p-belii-fon-dlya-saita-21.jpg'
-const url3 =
-	'https://phonoteka.org/uploads/posts/2022-01/thumbs/1642747770_22-phonoteka-org-p-belii-fon-dlya-saita-22.jpg'
+
+const heroUrl =
+	'https://images.ctfassets.net/exhgc4ofdrwe/2Sg3l03KLeww7XJ70nCCXJ/672cffa94e088322439d47bd7c270d12/hero-bg.png'
 
 module.exports = {
 	darkMode: ['class'],
@@ -83,8 +82,8 @@ module.exports = {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
 			backgroundImage: {
-				hero: 'url("https://thumb.tildacdn.com/tild6432-6631-4632-b130-633064633732/-/format/webp/image.png")',
-				'white-bricks': `url("${url2}")`,
+				hero: `url("${heroUrl}")`,
+				'white-bricks': `url("${whiteBricksUrl}")`,
 			},
 		},
 	},

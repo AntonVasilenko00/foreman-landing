@@ -5,10 +5,10 @@ interface HeroSectionProps extends HTMLProps<HTMLDivElement> {}
 
 const HeroSection: React.FC<HeroSectionProps> = ({ ...props }) => {
 	return (
-		<Section useDarkBackgroundImage>
+		<Section useDarkBackgroundImage className='flex flex-col justify-center'>
 			<div
 				data-reveal
-				className='opacity-0 section-container mt-36 z-10 text-slate-200 font-thin text-lg shadow-sm'>
+				className='opacity-0 section-container mt-36 z-10 text-slate-200 font-thin text-lg shadow-sm flex flex-col justify-center min-h-full w-full h-full'>
 				<p className='sm:w-3/4 text-sm'>Москва. Московская область.</p>
 				<h1
 					data-reveal

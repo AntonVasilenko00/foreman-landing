@@ -96,7 +96,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				{errors.phone && <p className='text-red-500'>{errors.phone.message}</p>}
 			</label>
 			<label className='flex flex-col gap-2'>
-				Ваш email (опционально):
+				Ваш email (необязательно):
 				<input
 					{...register('email', {
 						required: false,

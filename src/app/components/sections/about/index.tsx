@@ -8,14 +8,14 @@ interface AboutSectionProps extends HTMLProps<HTMLDivElement> {}
 const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 	return (
 		<Section id='about' useWhiteBackgroundImage>
-			<Image
+			{/* <Image
 				data-reveal
 				className='hidden sm:block absolute w-64 bottom-0 right-0 -scale-x-100'
 				src={maxStanding}
 				width={1080}
 				height={1920}
 				alt={'maxim-standing'}
-			/>
+			/> */}
 			<div
 				data-reveal
 				className='opacity-0 min-h-[70vh] section-container flex flex-col items-center sm:items-start md:items-start md:gap-16 sm:justify-center'>
@@ -33,14 +33,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 						<p
 							data-reveal
 							className='text-2xl drop-shadow-md italic text-center font-medium text-slate-800'>
-							&quot;Я делаю не ремонт, я делаю{' '}
-							<span className='border-b-orange-500 border-b-2'>
-								людей счастливыми
-							</span>{' '}
-							в их уютном жилье&quot;
+							&quot;Мы делаем ремонт без компромиссов. Воплощаем ваши мечты с
+							первого раза&quot;
 						</p>
 					</blockquote>
-					<figcaption className='flex items-center sm:items-start justify-center mt-6 space-x-3'>
+					<figcaption className='flex items-center justify-center mt-16 space-x-3'>
 						<div className='flex items-center divide-x-2 divide-gray-500 md:py-8'>
 							<cite
 								data-reveal
@@ -55,19 +52,32 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 						</div>
 					</figcaption>
 				</figure>
-				<div className='sm:w-1/2 md:w-3/4 md:text-lg lg:text-xl mt-8 flex flex-col gap-8'>
+				<div className='mx-auto sm:w-1/2 md:text-lg lg:text-xl mt-8 mb-16 flex flex-col gap-8'>
 					<p data-reveal className='drop-shadow-md'>
-						Наша строительная компания предоставляет комплексные ремонты в
-						полной готовности к заселению.
+						Мы — сплоченная{' '}
+						<span className='border-b border-b-orange-500'>
+							команда профессионалов
+						</span>{' '}
+						во главе с опытным прорабом.
 					</p>
 					<p data-reveal className='drop-shadow-md'>
-						У нас работает целая команда профессионалов, главная задача которых
-						поддерживать уровень самой лучшей компании в Москве, предоставляя
-						услуги и сервис самого высокого качества.
+						<span className='border-b border-b-orange-500'>Наша цель</span> —
+						поддерживать непревзойденные стандарты качества и профессионализма.
 					</p>
 					<p data-reveal className='drop-shadow-md'>
-						Реализуем любые работы от эконом до люкс отделки жилья бизнес
-						класса.
+						Мы специализируемся на выполнении{' '}
+						<span className='border-b border-b-orange-500'>
+							разнообразных задач
+						</span>
+						, начиная от экономичных вариантов и заканчивая роскошной отделкой
+						жилья бизнес класса.
+					</p>
+					<p data-reveal className='drop-shadow-md'>
+						<span className='border-b border-b-orange-500'>
+							Наш опыт и профессионализм
+						</span>{' '}
+						позволяют нам создавать работы, которые не только соответствуют
+						вашим ожиданиям, но и превосходят их.
 					</p>
 				</div>
 			</div>

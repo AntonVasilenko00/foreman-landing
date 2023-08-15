@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify'
 const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Ремонт Квартир | МСК',
+	title: 'Ремонт Квартир | Москва',
 	description:
 		'Ремонт Квартир в Москве и Московской области от опытного прораба.',
 	keywords: [

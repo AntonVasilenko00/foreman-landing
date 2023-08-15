@@ -20,7 +20,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 				data-reveal
 				className='opacity-0 min-h-[70vh] section-container flex flex-col items-center sm:items-start md:items-start md:gap-16 sm:justify-center'>
 				<figure className='sm:w-full'>
-					<svg
+					{/* <svg
 						data-reveal
 						className='w-10 h-10 mx-auto mb-3 text-orange-500'
 						aria-hidden='true'
@@ -28,7 +28,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 						fill='currentColor'
 						viewBox='0 0 18 14'>
 						<path d='M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z' />
-					</svg>
+					</svg> */}
 					<blockquote>
 						<p
 							data-reveal

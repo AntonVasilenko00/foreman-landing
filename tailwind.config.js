@@ -86,7 +86,7 @@ module.exports = {
 				},
 			},
 			animation: {
-				fadeIn: 'fadeIn 1s ease-in forwards',
+				fadeIn: 'fadeIn 0.35s ease-in forwards',
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},

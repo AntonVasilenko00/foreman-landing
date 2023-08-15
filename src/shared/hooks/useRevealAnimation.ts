@@ -11,7 +11,7 @@ const useRevealAnimation = () => {
 					entry.target.classList.add('animate-fadeIn')
 				} else {
 					// Otherwise remove the fadein class
-					entry.target.classList.remove('animate-fadeIn', 'opacity-0')
+					// entry.target.classList.remove('animate-fadeIn', 'opacity-0')
 				}
 			})
 		}

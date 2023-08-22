@@ -32,7 +32,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang='en' className=''>
+		<html lang='ru'>
 			<body className={font.className}>
 				<div className='relative bg-slate-50 min-h-screen flex flex-col'>
 					<Header />

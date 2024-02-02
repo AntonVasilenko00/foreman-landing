@@ -5,6 +5,10 @@ import { Open_Sans } from 'next/font/google'
 import Footer from '@/shared/components/layout/footer'
 import { ToastContainer } from 'react-toastify'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
+import { GoogleTagManagerScript, NoScriptGTM } from './components/analytics/google-tag-manager'
+
+const GTM_ID = 'GTM-WT54474L';
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -33,6 +37,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='ru'>
+			<GoogleTagManagerScript />
 			<body className={font.className}>
 				<div className='relative bg-slate-50 min-h-screen flex flex-col'>
 					<Header />
@@ -41,6 +46,7 @@ export default function RootLayout({
 				</div>
 				<Analytics />
 				<ToastContainer />
+				<NoScriptGTM />
 			</body>
 		</html>
 	)

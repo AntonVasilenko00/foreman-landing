@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mskremont.pro
+
+# Sitemaps
+Sitemap: https://www.mskremont.pro/sitemap.xml

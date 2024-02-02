@@ -30,6 +30,19 @@ export const metadata = {
 		'дизайн',
 		'интерьер',
 	],
+	metadataBase: new URL(process.env.NEXT_PUBLIC_WEBSITE_URL || "https://www.mskremont.pro"),
+  alternates: {
+    canonical: '/',
+	},
+	openGraph: {
+		title: 'Ремонт Квартир | Москва',
+		description: 'Ремонт Квартир в Москве и Московской области.',
+		url: 'process.env.NEXT_PUBLIC_WEBSITE_URL || "https://www.mskremont.pro"',
+		siteName: 'Ремонт Квартир | Москва',
+		locale: 'ru_RU',
+		type: 'website',
+		category: 'ремонт',
+	}
 }
 
 export default function RootLayout({

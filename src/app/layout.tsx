@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react'
 import Script from 'next/script'
 import { GoogleTagManagerScript, NoScriptGTM } from './components/analytics/google-tag-manager'
 import { GoogleAnalyticsScript } from './components/analytics/google-analytics'
+import { NoScriptYandexMetrics, YandexMetricsScript } from './components/analytics/yandex-metrics'
 
 const GTM_ID = 'GTM-WT54474L';
 
@@ -40,6 +41,7 @@ export default function RootLayout({
 		<html lang='ru'>
 			<GoogleTagManagerScript />
 			<GoogleAnalyticsScript />
+			<YandexMetricsScript />
 			<body className={font.className}>
 				<div className='relative bg-slate-50 min-h-screen flex flex-col'>
 					<Header />
@@ -49,6 +51,7 @@ export default function RootLayout({
 				<Analytics />
 				<ToastContainer />
 				<NoScriptGTM />
+				<NoScriptYandexMetrics />
 			</body>
 		</html>
 	)

@@ -14,7 +14,7 @@ const ConveniencesSection: React.FC<ConveniencesSectionProps> = ({
 }) => {
 	return (
 		<Section id='conveniences' useWhiteBackgroundImage>
-			<div className='container mx-auto px-10 mt-24 lg:mt-36'>
+			<div className='container mx-auto px-10 mt-24 lg:mt-36 z-10'>
 				<h2
 					data-reveal
 					className='capitalise text-4xl  md:text-6xl leading-tight'>

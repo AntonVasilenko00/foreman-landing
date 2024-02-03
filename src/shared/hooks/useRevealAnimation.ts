@@ -11,7 +11,7 @@ const useRevealAnimation = () => {
 					entry.target.classList.add('animate-fadeIn')
 				} else {
 					// Otherwise remove the fadein class
-					// entry.target.classList.remove('animate-fadeIn', 'opacity-0')
+					// entry.target.classList.remove('animate-fadeIn', '')
 				}
 			})
 		}
@@ -22,7 +22,7 @@ const useRevealAnimation = () => {
 		const targets = document.querySelectorAll('[data-reveal="true"]')
 		// Loop through each of the target
 		targets.forEach(function (target) {
-			target.classList.add('opacity-0')
+			target.classList.add('')
 			// Add the element to the watcher
 			observer.observe(target)
 		})

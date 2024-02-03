@@ -9,13 +9,9 @@ import ConveniencesSection from './components/sections/conveniences'
 import ProjectsSection from './components/sections/projects'
 import PricingSection from './components/sections/pricing'
 import ContactsSection from './components/sections/contacts'
-import useRevealAnimation from '@/shared/hooks/useRevealAnimation'
 import ContactFormSection from './components/sections/contact-form'
 
 const HomePage: React.FC = () => {
-	const [contactFormModalOpen, setContactFormModalOpen] = useState(false)
-
-	useRevealAnimation()
 
 	return (
 		<>

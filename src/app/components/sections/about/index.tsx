@@ -18,7 +18,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ ...props }) => {
 			/> */}
 			<div
 				data-reveal
-				className='opacity-0 min-h-[70vh] section-container flex flex-col items-center sm:items-start md:items-start md:gap-16 sm:justify-center'>
+				className=' min-h-[70vh] section-container flex flex-col items-center sm:items-start md:items-start md:gap-16 sm:justify-center'>
 				<figure className='sm:w-full'>
 					{/* <svg
 						data-reveal

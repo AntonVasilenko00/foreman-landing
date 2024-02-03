@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ ...props }) => {
 				<ul className='section-container px-10 mx-auto text-lg'>
 					<li
 						data-reveal
-						className='opacity-0 border-b-orange-400 border-b-2 pb-1 w-fit'>
+						className=' border-b-orange-400 border-b-2 pb-1 w-fit'>
 						<DialogTrigger>
 							<a className='hover:opacity-80 transition-all'>Оставить заявку</a>
 						</DialogTrigger>

@@ -9,11 +9,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ ...props }) => {
 		<Section useDarkBackgroundImage className='flex flex-col justify-center'>
 			<div
 				data-reveal
-				className='opacity-0 section-container mt-36 z-10 text-slate-200 font-thin text-lg shadow-sm flex flex-col justify-center min-h-full w-full h-full'>
+				className=' section-container mt-36 z-10 text-slate-200 font-thin text-lg shadow-sm flex flex-col justify-center min-h-full w-full h-full'>
 				<p className='sm:w-3/4 text-sm'>Москва. Московская область.</p>
 				<h1
 					data-reveal
-					className='opacity-0 sm:w-3/4 text-4xl font-bold tracking-wider leading-snug'>
+					className=' sm:w-3/4 text-4xl font-bold tracking-wider leading-snug'>
 					РЕМОНТ И ДИЗАЙН КВАРТИР И ДОМОВ
 				</h1>
 				<ul className='flex flex-col gap-4 sm:w-3/5 list-disc marker:text-orange-500 pl-6 my-24'>

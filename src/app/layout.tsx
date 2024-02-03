@@ -5,12 +5,10 @@ import { Open_Sans } from 'next/font/google'
 import Footer from '@/shared/components/layout/footer'
 import { ToastContainer } from 'react-toastify'
 import { Analytics } from '@vercel/analytics/react'
-import Script from 'next/script'
 import { GoogleTagManagerScript, NoScriptGTM } from './components/analytics/google-tag-manager'
 import { GoogleAnalyticsScript } from './components/analytics/google-analytics'
 import { NoScriptYandexMetrics, YandexMetricsScript } from './components/analytics/yandex-metrics'
-
-const GTM_ID = 'GTM-WT54474L';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -61,6 +59,7 @@ export default function RootLayout({
 					<main className='flex-grow scroll-smooth'>{children}</main>
 					<Footer />
 				</div>
+				<SpeedInsights />
 				<Analytics />
 				<ToastContainer />
 				<NoScriptGTM />

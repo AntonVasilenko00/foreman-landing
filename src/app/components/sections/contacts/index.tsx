@@ -45,7 +45,7 @@ const ContactsSection: React.FC<ContactsSectionProps> = ({ ...props }) => {
 					<li data-reveal className='hover:scale-110 duration-300'>
 						<SocialIcon
 							target='_blank'
-							url={`https://api.whatsapp.com/send?phone=_${phone}&text=Hello%20there!`}
+							url={`https://api.whatsapp.com/send?phone=_${phone}!`}
 						/>
 					</li>
 					<li data-reveal className='hover:scale-110 duration-300'>

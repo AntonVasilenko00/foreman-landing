@@ -36,7 +36,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
 	const onSubmit = async (data: FormData) => {
 		try {
-			const response = await axios.post('https://formspree.io/f/mnqkpodd', data)
+			const response = await axios.post('/api', data)
 			if (response.status === 200) {
 				toast('Форма успешно отправлена! Скоро с вами свяжемся.', {
 					type: 'success',
@@ -52,6 +52,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				})
 			}
 		} catch (error) {
+			console.log(error)
 			toast('Не удалось отправить форму. Пожалуйста, попробуйте позже.', {
 				type: 'error',
 				position: 'bottom-right',

@@ -50,7 +50,7 @@ export const PriceItem: React.FC<PriceItemProps> = ({
 				<DialogTrigger className='mt-8 ml-6'>
 					<a
 						data-reveal
-						className='block uppercase text-orange-500 drop-shadow animate-pulse animate-bounce hover:scale-110 hover:animate-none duration-700 md:text-xl'>
+						className='block uppercase text-orange-500 drop-shadow animate-pulse hover:animate-none hover:opacity-90 duration-700 md:text-xl'>
 						Оставить заявку
 					</a>
 				</DialogTrigger>

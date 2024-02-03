@@ -63,6 +63,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
 	return (
 		<form
+			autoComplete='on'
 			onSubmit={handleSubmit(onSubmit)}
 			className='flex flex-col gap-4 md:gap-6 lg:gap-8 w-full'>
 			<label className='flex flex-col gap-2'>

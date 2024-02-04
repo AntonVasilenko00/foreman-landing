@@ -48,7 +48,7 @@ export const metadata = {
 		category: 'ремонт',
 	},
 	other: {
-		"yandex-verification":"82c3dda7467b73c7",
+		"yandex-verification":"2072c8ea9be8d6e3",
 	},
 }
 

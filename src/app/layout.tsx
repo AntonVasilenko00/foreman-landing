@@ -34,7 +34,6 @@ export const metadata = {
 		'дизайн',
 		'интерьер',
 	],
-	"yandex-verification":"82c3dda7467b73c7",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_WEBSITE_URL || "https://www.mskremont.pro"),
   alternates: {
     canonical: '/',
@@ -47,7 +46,10 @@ export const metadata = {
 		locale: 'ru_RU',
 		type: 'website',
 		category: 'ремонт',
-	}
+	},
+	other: {
+		"yandex-verification":"82c3dda7467b73c7",
+	},
 }
 
 export default function RootLayout({

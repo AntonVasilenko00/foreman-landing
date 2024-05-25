@@ -36,7 +36,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
 	const onSubmit = async (data: FormData) => {
 		try {
-			const response = await axios.post('/api', data)
+			const response = await axios.post('/api/telegram', data)
 			if (response.status === 200) {
 				toast('Форма успешно отправлена! Скоро с вами свяжемся.', {
 					type: 'success',

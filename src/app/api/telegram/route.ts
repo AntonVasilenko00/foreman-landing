@@ -27,10 +27,11 @@ export async function POST(request: Request) {
 
   try {
     for (const chatId of chatIds) {
-      await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
+      const response = await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
         chat_id: chatId,
         text: message,
       });
+      console.log(`Message sent to @${response?.data?.result?.chat?.username}`);
     }
   } catch (error) {
     console.error(`Failed to send message: ${error}`);

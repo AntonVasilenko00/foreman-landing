@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import axios from 'axios';
 
-export const getFormSubmitBodyMessage = async (body: any) => `Новая заявка от ${body.name}:
+const getFormSubmitBodyMessage = async (body: any) => `Новая заявка от ${body.name}:
 Телефон: ${body.phone}
 Почта: ${body.email || 'не указана'}
 
